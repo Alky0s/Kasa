@@ -1,19 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../styles/header-home.css'
 
 const Header = () => {
     return (
-        <div className="header">
-            <img src="logo.png" alt="logo Kasa" />
-            <ul>
+        <header className="header-home">
+            <img className="header-home__logo" src="logo.png" alt="logo Kasa" />
+            <nav className='header-home__nav'>
+                <ul>
                 <NavLink to ="/">
-                    <li>Accueil</li>
+                    <li className='header-home__nav--accueil'>Accueil</li>
                 </NavLink>
                 <NavLink to ="/about">
-                    <li>A propos</li>
+                    <li className='header-home__nav--apropos'>A propos</li>
                 </NavLink>
-            </ul>
-        </div>
+                </ul>
+            </nav>
+        </header>
     );
 };
 
