@@ -1,0 +1,18 @@
+.home-banner {
+    display: flex;
+    align-items: center;
+    &__title {
+        left: 50px;
+        position: absolute;
+        height: 48px;
+        width: 217px;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    &__image {
+        height: 111px;
+        width: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}

@@ -1,63 +1,28 @@
+
+
 .header-home {
-    // position: absolute;
     display: flex;
-    width: 335px;
-    height: 47px;
-    left: 20px;
-    top: 20px;
+    align-items: center;
+    justify-content: space-between;
     &__logo {
-        position: absolute;
-        left: 0%;
-        right: 56.72%;
-        top: 0%;
-        bottom: 0%;
+     width: 35%;
+     height: 100%;
     }
     &__nav {
-        position: absolute;
-        left: 58.21%;
-        right: 0%;
-        top: 38.3%;
-        bottom: 25.53%;
-        &--accueil {
-            position: absolute;
-            left: 58.21%;
-            right: 24.18%;
-            top: 38.3%;
-            bottom: 25.53%;
-
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 142.6%;
-            /* or 17px */
-
+        display: flex;
+        font-size: 15px;
+        & ul {
             display: flex;
-            align-items: flex-end;
-            text-align: right;
-            text-decoration-line: underline;
-
-            color: #FF6060;
-        }
-        &--apropos {
-            position: absolute;
-            left: 78.81%;
-            right: 0%;
-            top: 38.3%;
-            bottom: 25.53%;
-
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 142.6%;
-            /* or 17px */
-
-            display: flex;
-            align-items: flex-end;
-            text-align: right;
-
-            color: #FF6060;
+            margin-right: 20px;
+            a {
+                text-decoration: none;
+                color: #FF6060;
+                ;
+                & li {
+                    padding-right: 15px;
+                    display: inline-block; 
+                }
+            }
         }
     }
 }

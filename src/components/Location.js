@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
+import '../styles/location.css'
 
 const Location = () => {
     const [data, setData] = useState([]);
@@ -9,7 +10,7 @@ const Location = () => {
         .then((res) => setData(res.data))
     }, [])
     return (
-        <div>
+        <div className='location'>
            {
             data.map((card, id) => 
                 <Card key={id} card={card}/>

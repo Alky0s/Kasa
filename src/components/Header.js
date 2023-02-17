@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/header-home.css'
+
+import '../styles/header-home.css';
+import '../styles/typography.css';
+
 
 const Header = () => {
     return (
@@ -8,7 +11,7 @@ const Header = () => {
             <img className="header-home__logo" src="logo.png" alt="logo Kasa" />
             <nav className='header-home__nav'>
                 <ul>
-                <NavLink to ="/">
+                <NavLink className="header-home__link" to ="/">
                     <li className='header-home__nav--accueil'>Accueil</li>
                 </NavLink>
                 <NavLink to ="/about">

@@ -1,56 +1,25 @@
 .header-home {
   display: flex;
-  width: 335px;
-  height: 47px;
-  left: 20px;
-  top: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-home__logo {
-  position: absolute;
-  left: 0%;
-  right: 56.72%;
-  top: 0%;
-  bottom: 0%;
+  width: 35%;
+  height: 100%;
 }
 .header-home__nav {
-  position: absolute;
-  left: 58.21%;
-  right: 0%;
-  top: 38.3%;
-  bottom: 25.53%;
-}
-.header-home__nav--accueil {
-  position: absolute;
-  left: 58.21%;
-  right: 24.18%;
-  top: 38.3%;
-  bottom: 25.53%;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 142.6%;
-  /* or 17px */
   display: flex;
-  align-items: flex-end;
-  text-align: right;
-  text-decoration-line: underline;
+  font-size: 15px;
+}
+.header-home__nav ul {
+  display: flex;
+  margin-right: 20px;
+}
+.header-home__nav ul a {
+  text-decoration: none;
   color: #FF6060;
 }
-.header-home__nav--apropos {
-  position: absolute;
-  left: 78.81%;
-  right: 0%;
-  top: 38.3%;
-  bottom: 25.53%;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 142.6%;
-  /* or 17px */
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  color: #FF6060;
+.header-home__nav ul a li {
+  padding-right: 15px;
+  display: inline-block;
 }/*# sourceMappingURL=header-home.css.map */

@@ -1,0 +1,12 @@
+// Police globale + box-sizing
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 10px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
