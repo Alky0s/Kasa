@@ -3,13 +3,12 @@
     flex-direction: column;
     &-card {
         margin: 10px;
-        margin-left: 0;
-        margin-right: 0;
         height: 255px;
-        width: 335px;
         left: 0px;
         top: 0px;
         border-radius: 10px;
+        margin-right: auto;
+        margin-left: auto;
         &__title {
             position: relative;
             color: #FFFFFF;
@@ -23,7 +22,7 @@
             padding: 10px;
             padding-bottom: 80px;
             object-fit: cover;
-            width: 300px;
+            width: 280px;
             height: 100%;
         }
     }

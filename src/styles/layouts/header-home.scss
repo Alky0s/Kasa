@@ -1,25 +1,29 @@
-
-
 .header-home {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     &__logo {
      width: 35%;
      height: 100%;
+     margin: 15px;
+     margin-right: 0;
     }
     &__nav {
         display: flex;
-        font-size: 15px;
+        font-size: 13px;
+        text-transform: uppercase;
+        &--accueil {
+            padding-right: 15px;
+        }
+        &--apropos {
+            padding-right: 15px;
+        }
         & ul {
             display: flex;
-            margin-right: 20px;
             a {
                 text-decoration: none;
                 color: #FF6060;
-                ;
                 & li {
-                    padding-right: 15px;
                     display: inline-block; 
                 }
             }

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HomeBanner from "../components/HomeBanner";
 import Location from "../components/Location";
@@ -10,6 +11,7 @@ const Home = () => {
         <Header />
         <HomeBanner />
         <Location />
+        <Footer />
     </div>
   );
 };

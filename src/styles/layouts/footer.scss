@@ -1,0 +1,16 @@
+.footer {
+    background-color: black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-title {
+        color: white;
+        text-align: center;
+    }
+}

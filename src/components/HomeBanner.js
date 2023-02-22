@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/home-banner.css'
 
 const HomeBanner = () => {
     return (
