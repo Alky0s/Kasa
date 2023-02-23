@@ -3,7 +3,7 @@ import React from 'react';
 const AboutBackground = () => {
     return (
         <div>
-            <img src='about-background.png' alt='Paysage montagneux'></img>
+            <img className='about-background' src='about-background.png' alt='Paysage montagneux'></img>
         </div>
     );
 };

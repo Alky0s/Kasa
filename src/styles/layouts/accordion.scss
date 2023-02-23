@@ -1,0 +1,35 @@
+.accordion-container {
+    margin: 10px;
+    &__card {
+        margin-bottom: 20px;
+        background: #FF6060;
+        &-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title {
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 0;
+            cursor: pointer;
+        }
+        &-content {
+            background: #F6F6F6;
+            margin: 0;
+            color: #FF6060;
+            padding-top: 10px;
+            // padding-bottom: 30px;
+            padding-left: 8px;
+            padding-right: 8px;
+            display: flex;
+            overflow: hidden;
+            transition: all 600ms ease-in-out;
+            height: 0;
+            opacity: 0;
+        }
+    }
+}
