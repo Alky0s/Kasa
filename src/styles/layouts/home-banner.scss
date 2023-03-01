@@ -2,23 +2,29 @@
     display: flex;
     align-items: center;
     margin-left: 0;
-    filter: brightness(70%);
+    
     
     &__title {
-        left: 50px;
-        position: absolute;
-        width: 217px;
+        padding: 20px;
+        width: 90%;
         font-size: 20px;
         color: #FFFFFF;
-    }
-    &__image {
-        height: 111px;
-        width: 280px;
-        border-radius: 10px;
-        object-fit: cover;
-        display: block;
+        background-image : linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../../../public/background.png);
+        background-size: cover;
+        border-radius: 20px;
+        margin: 0;
         margin-left: auto;
         margin-right: auto;
         
     }
+    // &__image {
+    //     height: 111px;
+    //     width: 280px;
+    //     border-radius: 10px;
+    //     object-fit: cover;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+        
+    // }
 }
