@@ -1,9 +1,17 @@
-import React from 'react';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { useParams } from "react-router-dom";
 
 const House = () => {
+    
+    let { id } = useParams();
+    console.log( { id});
+  
+   
     return (
         <div>
-            <h1>Logement</h1>
+            <Header />
+            <Footer />
         </div>
     );
 };

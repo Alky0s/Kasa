@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ErrorMessage = () => {
     return (
@@ -7,7 +8,7 @@ const ErrorMessage = () => {
                 <h3 className="error-message__content-title">404</h3>
                 <p className="error-message__content-text">Oups! La page que vous demandez n'existe pas.</p>
             </div>
-            <a className="error-message__link" href="http://localhost:3000/">Retourner sur la page d’accueil</a>    
+            <Link className='error-message__link' to={"/"}>Retourner sur la page d’accueil</Link>
         </div>
     );
 };
