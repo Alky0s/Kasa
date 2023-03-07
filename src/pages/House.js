@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Slideshow from "../components/Slideshow"
+import Carousel from "../components/Carousel"
 import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
@@ -25,11 +25,17 @@ const House = () => {
       }
     
     const equipmentList = item.equipments.map((e) => <li key={e}>{e}</li>);
-      
+    const slides = item.pictures;
+    console.log(slides);
     return (
         <div className="House-informations">
             <Header />
-            <Slideshow />
+            <div>
+                <Carousel>
+                    { slides.map((p) => ( 
+                    <img src={p} alt="Photos du logement" />))}
+                </Carousel>
+            </div>
             <div className="House-informations__location">
                 <h1>{item.title}</h1>
                 <h2>{item.location}</h2>
