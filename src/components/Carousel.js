@@ -7,8 +7,8 @@ import ChevronR from "../assets/chevronR.png"
 
 export default function Carousel () {
     const { id } = useParams();
-    const foundItem = data.find((object) => object.id === id);
-    const pictures = foundItem.pictures;
+    const houseDetail = data.find((object) => object.id === id);
+    const pictures = houseDetail.pictures;
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -31,23 +31,24 @@ export default function Carousel () {
                 <img className="rightArrow" src={ChevronR} alt="Right arrow" onClick={next}/>
             </button>
             {pictures.map((img, index) => {
-        return (
-          <div key={index}>
-            {index === currentIndex && (
-              <img
-                src={img}
-                alt="Photos du logement"
-                className="slider-image"
-              />
-            )}
-            {index === currentIndex && (
-              <strong className="image-number">
-                {currentIndex + 1}/{pictures.length}
-              </strong>
-            )}
-          </div>
-        );
-      })}    
+                return (
+                <div key={index}>
+                    {index === currentIndex && (
+                    <img
+                        src={img}
+                        alt="Photos du logement"
+                        className="carousel-picture"
+                    />
+                    )}
+                    {/* Pictures number */}
+                    {index === currentIndex && (
+                    <strong className="picture-number">
+                        {currentIndex + 1}/{pictures.length}
+                    </strong>
+                    )}
+                </div>
+                );
+            })}    
         </div>
              
             
