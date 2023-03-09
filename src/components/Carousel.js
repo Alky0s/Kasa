@@ -24,28 +24,24 @@ export default function Carousel () {
     };
     return (
         <div className='carousel-slides'>
-            <button className='carousel-slides__leftB'>
                 <img className="leftArrow" src={ChevronL} alt="Left arrow"  onClick={prev}/>
-            </button>
-            <button className='carousel-slides__rightB'>
                 <img className="rightArrow" src={ChevronR} alt="Right arrow" onClick={next}/>
-            </button>
-            {pictures.map((img, index) => {
-                return (
-                <div key={index}>
-                    {index === currentIndex && (
-                    <img
-                        src={img}
-                        alt="Photos du logement"
-                        className="carousel-picture"
-                    />
-                    )}
-                    {/* Pictures number */}
-                    {index === currentIndex && (
-                    <strong className="picture-number">
-                        {currentIndex + 1}/{pictures.length}
-                    </strong>
-                    )}
+                {pictures.map((img, index) => {
+                    return (
+                    <div key={index}>
+                        {index === currentIndex && (
+                        <img
+                            src={img}
+                            alt="Photos du logement"
+                            className="carousel-picture"
+                        />
+                        )}
+                        {/* Pictures number */}
+                        {index === currentIndex && (
+                        <strong className="picture-number">
+                            {currentIndex + 1}/{pictures.length}
+                        </strong>
+                        )}
                 </div>
                 );
             })}    
