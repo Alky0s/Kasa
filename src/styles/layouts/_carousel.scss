@@ -1,7 +1,8 @@
 .carousel {
-    display: flex;
+    
     &-slides {
-        display: flex;
+       
+        
         overflow: hidden;
         position: relative;
         &-slides__leftB {
@@ -11,9 +12,13 @@
     } 
 }
 .carousel-picture {
-    width: 100%;
-    height: 300px;
+    display: block;
+    width: 90%;
+    height: 280px;
     object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
 }
 
 .leftArrow {
@@ -22,4 +27,8 @@
 
 .rightArrow {
     width: 20px;
+}
+
+.picture-number {
+    opacity: 0;
 }

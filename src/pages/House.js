@@ -28,7 +28,7 @@ const House = () => {
     const slides = item.pictures;
     console.log(slides);
     return (
-        <div className="House-informations">
+        <div className="house-informations">
             <Header />
             <div>
                 <Carousel>
@@ -36,20 +36,20 @@ const House = () => {
                     <img src={p} alt="Photos du logement" />))}
                 </Carousel>
             </div>
-            <div className="House-informations__location">
+            <div className="house-informations__location">
                 <h1>{item.title}</h1>
                 <h2>{item.location}</h2>
             </div>
-            <div className="House-informations__tags">
+            <div className="house-informations__tags">
                 <ul>
                     { item.tags.map((tag) => ( 
                     <li key={tag}>{tag}</li>
                     ))}
                 </ul>
             </div>
-            <div className="House-informations__host">
-                <p className="House-informations__host-name">{item.host.name}</p>
-                <img className="House-informations__host-picture" src={item.host.picture} alt="Hôte" />
+            <div className="house-informations__host">
+                <p className="house-informations__host-name">{item.host.name}</p>
+                <img className="house-informations__host-picture" src={item.host.picture} alt="Hôte" />
             </div>
             <Accordion title="Description" active={active} setActive={setActive} content={item.description}/>
             <Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/>
