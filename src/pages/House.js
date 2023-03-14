@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import data from '../data.json';
 import {  useEffect, useState } from "react";
 import Error from "../pages/Error404"
+import RatingStars from "../components/RatingStars";
 
 
 
@@ -47,9 +48,14 @@ const House = () => {
                     ))}
                 </ul>
             </div>
-            <div className="house-informations__host">
-                <p className="house-informations__host-name">{item.host.name}</p>
-                <img className="house-informations__host-picture" src={item.host.picture} alt="Hôte" />
+            <div className="house-informations__profile">
+                <div className="house-informations__rating">
+                    <RatingStars rating={item.rating}/>
+                </div>
+                <div className="house-informations__host">
+                    <p className="house-informations__host-name">{item.host.name}</p>
+                    <img className="house-informations__host-picture" src={item.host.picture} alt="Hôte" />
+                </div>
             </div>
             <Accordion title="Description" active={active} setActive={setActive} content={item.description}/>
             <Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/>

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import ArrowDown from "../assets/arrowDown.png";
 import ArrowUp from "../assets/arrowUp.png";
 
-
-
 const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
   return (

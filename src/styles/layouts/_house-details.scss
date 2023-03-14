@@ -12,6 +12,9 @@
             font-size: 14px;
         }
     }
+    &__rating {
+        margin-left: 15px;
+    }
     &__tags {
         & ul {
             display: flex;
@@ -44,4 +47,9 @@
             margin-right: 10px;
         }
     }
+}
+
+.house-informations__profile {
+    display: flex;
+    align-items: center;
 }
