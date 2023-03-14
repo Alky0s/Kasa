@@ -14,21 +14,32 @@
         text-transform: uppercase;
         &--accueil {
             padding-right: 15px;
+            list-style-type: none;
         }
         &--apropos {
             padding-right: 15px;
+            list-style-type: none;
         }
         & ul {
             display: flex;
             margin-top: 20px;
             a {
-                text-decoration: none;
                 color: $primary-color;
+                text-decoration: none;
+                
+                &.active {
+                  text-decoration: underline;
+                  text-decoration-color: $primary-color;
+                  
+                }
                 & li {
-                    display: inline-block; 
-                    text-decoration-line: underline;
+                    display: inline-block;
+                    
+                  
                 }
             }
         }
+       
     }
 }
+

@@ -8,12 +8,10 @@ const Header = () => {
             <img className="header-home__logo" src={Logo} alt="logo Kasa" />
             <nav className='header-home__nav'>
                 <ul>
-                <NavLink className="header-home__link" to ="/">
-                    <li className='header-home__nav--accueil'>Accueil</li>
-                </NavLink>
-                <NavLink to ="/about">
-                    <li className='header-home__nav--apropos'>A propos</li>
-                </NavLink>
+                    <li className='header-home__nav--accueil'>
+                    <NavLink to ="/">Accueil</NavLink></li>
+                    <li className='header-home__nav--apropos'>
+                    <NavLink to ="/about">A propos</NavLink></li>
                 </ul>
             </nav>
         </header>
