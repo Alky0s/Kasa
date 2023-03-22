@@ -1,14 +1,9 @@
 .carousel {
     
     &-slides {
-       
-        
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
-        &-slides__leftB {
-            display: flex;
-           
-        }
+       
     } 
 }
 .carousel-picture {

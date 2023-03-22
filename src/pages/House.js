@@ -27,7 +27,10 @@ const House = () => {
     
     const equipmentList = item.equipments.map((e) => <li key={e}>{e}</li>);
     const slides = item.pictures;
-    console.log(slides);
+    const hostName = item.host.name;
+    const [firstName, lastName] = hostName.split(" ");
+    
+
     return (
         <div className="house-informations">
             <Header />
@@ -53,7 +56,10 @@ const House = () => {
                     <RatingStars rating={item.rating}/>
                 </div>
                 <div className="house-informations__host">
-                    <p className="house-informations__host-name">{item.host.name}</p>
+                    <p className="house-informations__host-name">
+                        <span>{firstName}</span><br></br>
+                        <span>{lastName}</span>
+                    </p>
                     <img className="house-informations__host-picture" src={item.host.picture} alt="Hôte" />
                 </div>
             </div>
