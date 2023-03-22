@@ -2,8 +2,6 @@
     display: flex;
     align-items: center;
     margin-left: 0;
-    
-    
     &__title {
         padding: 20px;
         width: 88%;
@@ -16,16 +14,10 @@
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
-        
+        @include tablet {
+            text-align: center;
+            padding: 40px;
+            font-size: 24px;
+        }
     }
-    // &__image {
-    //     height: 111px;
-    //     width: 280px;
-    //     border-radius: 10px;
-    //     object-fit: cover;
-    //     display: block;
-    //     margin-left: auto;
-    //     margin-right: auto;
-        
-    // }
 }

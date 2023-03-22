@@ -1,24 +1,60 @@
 .header-home {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;
+    
+    @include tablet {
+        margin: 20px 20px 0 20px;
+    }
     &__logo {
      width: 35%;
      height: 100%;
      margin: 15px;
      margin-right: 0;
+        @include mobile-500 {
+            width: 30%;
+        }
+        @include mobile-650 {
+            width: 25%;
+        }
+        @include tablet {
+            width: 23%;
+        }
+        @include laptop {
+            width: 16%;
+        }
+        @include desktop {
+            width: 13%;
+        }
     }
     &__nav {
         display: flex;
         font-size: 10px;
         text-transform: uppercase;
+            @include mobile-500 {
+                font-size: 13px;
+            }
+            @include mobile-650 {
+                font-size: 15px;
+            }
+            @include tablet {
+                font-size: 18px;
+                text-transform: none;
+            }
         &--accueil {
             padding-right: 15px;
             list-style-type: none;
+            @include mobile-650 {
+                padding-right: 18px;
+            }
         }
         &--apropos {
             padding-right: 15px;
             list-style-type: none;
+            @include mobile-650 {
+                padding-left: 18px;
+            }
         }
         & ul {
             display: flex;

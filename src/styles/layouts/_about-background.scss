@@ -6,5 +6,18 @@
    margin-bottom: 20px;
    margin-top: 5px;
    border-radius: 10px;
+   
    filter: brightness(85%);
+   @include mobile-500 {
+      height: 300px;
+   }
+   @include mobile-650 {
+      height: 250px;
+   }
+   @include tablet {
+      height: 200px;
+   }
+   @include laptop {
+      height: 180px;
+   }
 }

@@ -6,10 +6,8 @@ const Card = ({card}) => {
         return (
             <article className='location-card'>
                <Link to={`/house/${card.id}`}>
-                <div className='location-card__content'>
-                   <img className='location-card__content-image'src={card.cover} alt={card.title} />
-                   <h3 className='location-card__content-title'>{card.title}</h3>
-                </div>
+               <img className='location-card__image'src={card.cover} alt={card.title} />
+               <h3 className='location-card__title'>{card.title}</h3>
                </Link>
             </article>
            );
