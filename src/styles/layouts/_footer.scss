@@ -4,13 +4,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablet {
+        margin-top: 30px;
+    }
+    @include laptop {
+        margin-top: 50px;
+    }
+    @include desktop {
+        margin-top: 70px;
+        padding: 120px;
+    }
+    @include larger {
+        margin-top: 70px;
+        padding: 150px;
+    }
     &-logo {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        @include desktop {
+            width: 12%;
+        } 
+        @include larger {
+            width: 12%;
+        }
     }
     &-title {
         color: white;
         text-align: center;
+        @include desktop {
+            font-size: 16px;
+        }
+        @include desktop {
+            font-size: 18px;
+        }
     }
 }
