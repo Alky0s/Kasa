@@ -27,7 +27,7 @@
             width: 25%;
         }
         @include tablet {
-            width: 23%;
+            width: 20%;
         }
         @include laptop {
             width: 16%;
@@ -50,8 +50,12 @@
                 font-size: 18px;
                 text-transform: none;
             }
+            @include laptop {
+                font-size: 22px;
+                text-transform: none;
+            }
             @include desktop {
-                font-size: 32px;
+                font-size: 24px;
             }
             @include larger {
                 font-size: 32px;
