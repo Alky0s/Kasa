@@ -8,6 +8,18 @@
             font-size: 96px;
             color: $primary-color;
             margin: 0;
+            @include tablet {
+                font-size: 130px;
+            }
+            @include laptop {
+                font-size: 180px;
+            }
+            @include desktop {
+                font-size: 230px;
+            }
+            @include desktop {
+                font-size: 350px;
+            }
         }
         &-text {
             text-align: center;
@@ -15,6 +27,19 @@
             font-size: 16px;
             width: 65%;  
             margin: 0;
+            @include tablet {
+                margin-top: 30px;
+                font-size: 20px;
+            }
+            @include laptop {
+                font-size: 24px;
+            }
+            @include desktop {
+                font-size: 32px;
+            }
+            @include desktop {
+                font-size: 48px;
+            }
         }
     }
     &__link {
@@ -23,5 +48,14 @@
         justify-content: center;
         color: $primary-color;
         margin-bottom: 40px;
+        @include tablet {
+            font-size: 12px;
+        }
+        @include desktop {
+            font-size: 16px;
+        }
+        @include larger {
+            font-size: 24px;
+        }
     }
 }
