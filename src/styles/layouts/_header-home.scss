@@ -16,24 +16,27 @@
         margin: 50px 90px 50px 90px;
     }
     &__logo {
-     width: 35%;
+     width: 28%;
      height: 100%;
      margin: 15px;
      margin-right: 0;
         @include mobile-500 {
-            width: 30%;
+            width: 28%;
         }
         @include mobile-650 {
-            width: 25%;
+            width: 23%;
         }
         @include tablet {
             width: 20%;
         }
         @include laptop {
-            width: 16%;
+            width: 15%;
         }
         @include desktop {
-            width: 15%;
+            width: 13%;
+        }
+        @include larger {
+            width: 10%;
         }
     }
     &__nav {
@@ -47,18 +50,18 @@
                 font-size: 15px;
             }
             @include tablet {
-                font-size: 18px;
+                font-size: 16px;
                 text-transform: none;
             }
             @include laptop {
-                font-size: 22px;
+                font-size: 18px;
                 text-transform: none;
             }
             @include desktop {
                 font-size: 24px;
             }
             @include larger {
-                font-size: 32px;
+                font-size: 28px;
             }
         &--accueil {
             padding-right: 15px;

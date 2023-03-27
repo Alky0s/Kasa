@@ -6,21 +6,21 @@ import RedStar from '../assets/redstar.png'
 const RatingStars = ({rating}) => {
     const numberStars = [1, 2, 3, 4, 5];
     return (
-        <div>
+        <div className='rating-stars'>
             {numberStars.map((star) =>
                 rating >= star ? (
                     <img
                         key={star.toString()}
-                        className=""
+                        className="stars"
                         src={RedStar}
-                        alt=""
+                        alt="étoile"
                     />
                     ) : (
                         <img
                           key={star.toString()}
-                          className=""
+                          className="stars"
                           src={Star}
-                          alt=""
+                          alt="étoile"
                         />
                 ))}
         </div>

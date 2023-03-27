@@ -2,25 +2,72 @@
     &__location {
         margin-left: 15px;
         color: $primary-color;
+        @include mobile-500 {
+            margin-left: 30px;
+        }
+        @include mobile-650 {
+            margin-left: 40px;
+        }
+        @include tablet {
+            margin-left: 50px;
+        }
+        @include laptop {
+            margin-left: 60px;
+        }
+        @include desktop {
+            margin-left: 90px;
+        }
+        @include larger {
+            margin-left: 140px;
+        }
         & h1 {
             font-weight: 500;
             margin-top: 0;
+            margin-bottom: 0;
             font-size: 18px;
+            @include laptop {
+                font-size: 24px;
+            }
+            @include desktop {
+                font-size: 32px;
+            }
         }
         & h2 {
             font-weight: 500;
             font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            @include laptop {
+                font-size: 14px;
+            }
+            @include desktop {
+                font-size: 18px;
+            }
         }
-    }
-    &__rating {
-        margin-left: 15px;
     }
     &__tags {
         & ul {
             display: flex;
             margin-left: 20px;
             padding: 0;
-            
+            @include mobile-500 {
+                margin-left: 30px;
+            }
+            @include mobile-650 {
+                margin-left: 40px;
+            }
+            @include tablet {
+                margin-left: 50px;
+            }
+            @include laptop {
+                margin-left: 60px;
+            }
+            @include desktop {
+                margin-left: 90px;
+            }
+            @include larger {
+                margin-left: 140px;
+            }
         }
         & li {
             list-style: none;
@@ -30,21 +77,57 @@
             color: white;
             padding: 5px 10px;
             font-size: 10px;
+            @include tablet {
+                font-size: 13px;
+            }
+            @include laptop {
+                font-size: 14px;
+            }
+            @include laptop {
+                font-size: 16px;
+            }
         } 
     }
     &__host {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin-right: 15px;
+        @include mobile-500 {
+            margin-right: 30px;
+        }
+        @include mobile-650 {
+            margin-right: 45px;
+        }
+        @include tablet {
+            margin-right: 55px;
+        }
+        @include laptop {
+            margin-right: 65px;
+        }
+        @include desktop {
+            margin-right: 90px;
+        }
+        @include larger {
+            margin-right: 140px;
+        }
         &-picture {
             border-radius: 100px;
             object-fit: cover;
             width: 15%;
-            margin-right: 15px;
+            @include tablet {
+                width: 20%;
+            }
         }
         &-name {
             color: $primary-color;
             margin-right: 10px;
+            @include tablet {
+                font-size: 13px;
+            }
+            @include laptop {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -53,4 +136,63 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 15px;
+    @include mobile-500 {
+        margin-left: 30px;
+    }
+    @include mobile-650 {
+        margin-left: 40px;
+    }
+    @include tablet {
+        margin-left: 50px;
+              
+    }
+    @include laptop {
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
 }
+
+
+    .house-informations__details {
+        @include laptop {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    // .rating-stars {
+    //     margin-left: 15px;
+    // }
+
+    .stars {
+        padding: 2px;
+    }
+    @include laptop {
+        .rating-stars {
+            margin-right: 65px;
+            margin-top: 5px;
+        }
+        .stars {
+            width: 25px;
+            
+        }
+    }
+    @include desktop {
+        .rating-stars {
+            margin-right: 90px;
+            margin-top: 5px;
+        }
+        .stars {
+            width: 25px;
+        }
+    }
+
+    @include larger {
+        .rating-stars {
+            margin-right: 140px;
+        }
+    }

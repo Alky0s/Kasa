@@ -7,4 +7,19 @@
     color: black;
     z-index: 1;
     cursor: pointer;
+    @include mobile-500{
+        left: 50px;
+    }
+    @include mobile-650{
+        left: 70px;
+    }
+    @include laptop{
+        left: 90px;
+    }
+    @include desktop {
+        left: 110px;
+    }
+    @include larger {
+        left: 150px;
+    }
 }

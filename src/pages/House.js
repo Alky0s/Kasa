@@ -40,31 +40,37 @@ const House = () => {
                     <img src={p} alt="Photos du logement" />))}
                 </Carousel>
             </div>
-            <div className="house-informations__location">
-                <h1>{item.title}</h1>
-                <h2>{item.location}</h2>
-            </div>
-            <div className="house-informations__tags">
-                <ul>
-                    { item.tags.map((tag) => ( 
-                    <li key={tag}>{tag}</li>
-                    ))}
-                </ul>
-            </div>
-            <div className="house-informations__profile">
-                <div className="house-informations__rating">
-                    <RatingStars rating={item.rating}/>
+            <div className="house-informations__details">
+                <div className="house-informations__loc-tags">
+                    <div className="house-informations__location">
+                        <h1>{item.title}</h1>
+                        <h2>{item.location}</h2>
+                    </div>
+                    <div className="house-informations__tags">
+                        <ul>
+                            { item.tags.map((tag) => ( 
+                            <li key={tag}>{tag}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-                <div className="house-informations__host">
-                    <p className="house-informations__host-name">
-                        <span>{firstName}</span><br></br>
-                        <span>{lastName}</span>
-                    </p>
-                    <img className="house-informations__host-picture" src={item.host.picture} alt="Hôte" />
+                <div className="house-informations__profile">
+                    <div className="house-informations__rating">
+                        <RatingStars rating={item.rating}/>
+                    </div>
+                    <div className="house-informations__host">
+                        <p className="house-informations__host-name">
+                            <span>{firstName}</span><br></br>
+                            <span>{lastName}</span>
+                        </p>
+                        <img className="house-informations__host-picture" src={item.host.picture} alt="Hôte" />
+                    </div>
                 </div>
             </div>
-            <Accordion title="Description" active={active} setActive={setActive} content={item.description}/>
-            <Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/>
+            <div className="accordions">
+                <Accordion title="Description" active={active} setActive={setActive} content={item.description}/>
+                <Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/>
+            </div>
             <Footer />
         </div>
     );
