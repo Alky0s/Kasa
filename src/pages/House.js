@@ -67,9 +67,9 @@ const House = () => {
                     </div>
                 </div>
             </div>
-            <div className="accordions">
-                <Accordion title="Description" active={active} setActive={setActive} content={item.description}/>
-                <Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/>
+            <div className="accordions-house">
+                <div className="accordions-house__item"><Accordion title="Description" active={active} setActive={setActive} content={item.description}/></div>
+                <div className="accordions-house__item"><Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/></div>
             </div>
             <Footer />
         </div>

@@ -27,9 +27,3 @@
     @content;
     }
 }
-
-@mixin larger {
-    @media screen and (min-width: map-get($breakpoints, larger)){
-    @content;
-    }
-}

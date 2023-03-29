@@ -1,10 +1,10 @@
 import React from 'react';
-import aboutBack from '../assets/about-background.png'
+// import aboutBack from '../assets/about-background.png'
 
 const AboutBackground = () => {
     return (
-        <div>
-            <img className='about-background' src={aboutBack} alt='Paysage montagneux'></img>
+        <div className='about-background'>
+            {/* <img className='about-background' src={aboutBack} alt='Paysage montagneux'></img> */}
         </div>
     );
 };

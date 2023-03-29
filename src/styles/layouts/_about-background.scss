@@ -1,23 +1,16 @@
 .about-background {
    display: block;
+   height: 220px;
    width: 90%; 
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 20px;
    margin-top: 5px;
    border-radius: 10px;
-   
-   filter: brightness(85%);
-   @include mobile-500 {
-      height: 300px;
-   }
-   @include mobile-650 {
-      height: 250px;
-   }
+   background-image : linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../../assets/about-background.png);
+   background-size: cover;
+   background-position: center center;
    @include tablet {
-      height: 200px;
-   }
-   @include laptop {
-      height: 180px;
+      background-image : linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../../assets/about-background-large.png);
    }
 }

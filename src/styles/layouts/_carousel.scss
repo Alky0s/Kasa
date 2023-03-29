@@ -1,9 +1,9 @@
 .carousel {
-    
     &-slides {
-        // overflow: hidden;
         position: relative;
-       
+        @include tablet {
+            margin-bottom: 20px;
+        }
     } 
 }
 .carousel-picture {
@@ -23,9 +23,6 @@
     @include desktop {
         height: 450px;
     }
-    @include larger {
-        height: 550px;
-    }
 }
 
 .leftArrow {
@@ -38,4 +35,20 @@
 
 .picture-number {
     opacity: 0;
+    color: white;
+    @include tablet {
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 1;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: 90%;
+    }
+    @include laptop {
+        font-size: 18px;
+    }
+    @include desktop {
+        font-size: 22px;
+    }
 }

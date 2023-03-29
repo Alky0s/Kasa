@@ -17,9 +17,6 @@
             @include desktop {
                 font-size: 230px;
             }
-            @include desktop {
-                font-size: 350px;
-            }
         }
         &-text {
             text-align: center;
@@ -37,9 +34,6 @@
             @include desktop {
                 font-size: 32px;
             }
-            @include desktop {
-                font-size: 48px;
-            }
         }
     }
     &__link {
@@ -53,9 +47,6 @@
         }
         @include desktop {
             font-size: 16px;
-        }
-        @include larger {
-            font-size: 24px;
         }
     }
 }

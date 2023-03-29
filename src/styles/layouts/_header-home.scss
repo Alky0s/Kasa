@@ -12,9 +12,6 @@
     @include desktop {
         margin: 30px 70px 30px 70px;
     }
-    @include larger {
-        margin: 50px 90px 50px 90px;
-    }
     &__logo {
      width: 28%;
      height: 100%;
@@ -34,9 +31,6 @@
         }
         @include desktop {
             width: 13%;
-        }
-        @include larger {
-            width: 10%;
         }
     }
     &__nav {
@@ -59,9 +53,6 @@
             }
             @include desktop {
                 font-size: 24px;
-            }
-            @include larger {
-                font-size: 28px;
             }
         &--accueil {
             padding-right: 15px;

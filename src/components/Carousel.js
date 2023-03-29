@@ -28,7 +28,7 @@ export default function Carousel () {
                 <img className="rightArrow" src={ChevronR} alt="Right arrow" onClick={next}/>
                 {pictures.map((img, index) => {
                     return (
-                    <div key={index}>
+                    <div className='carousel-slides__number' key={index}>
                         {index === currentIndex && (
                         <img
                             src={img}

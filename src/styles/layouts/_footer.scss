@@ -14,10 +14,6 @@
         margin-top: 70px;
         padding: 120px;
     }
-    @include larger {
-        margin-top: 70px;
-        padding: 150px;
-    }
     &-logo {
         display: block;
         margin-left: auto;
@@ -25,9 +21,6 @@
         @include desktop {
             width: 12%;
         } 
-        @include larger {
-            width: 12%;
-        }
     }
     &-title {
         color: white;
