@@ -37,7 +37,7 @@ const House = () => {
             <div>
                 <Carousel>
                     { slides.map((p) => ( 
-                    <img src={p} alt="Photos du logement" />))}
+                    <img key = {p} src={p} alt="Photos du logement" />))}
                 </Carousel>
             </div>
             <div className="house-informations__details">
