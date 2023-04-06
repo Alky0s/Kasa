@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
+// I give to the function my props key "card" to get all I need from our JSON file
 const Card = ({card}) => {
         return (
             <article className='location-card'>

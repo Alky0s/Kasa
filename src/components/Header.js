@@ -9,9 +9,11 @@ const Header = () => {
             <nav className='header-home__nav'>
                 <ul>
                     <li className='header-home__nav--accueil'>
-                    <NavLink to ="/">Accueil</NavLink></li>
+                        <NavLink to ="/">Accueil</NavLink>
+                    </li>
                     <li className='header-home__nav--apropos'>
-                    <NavLink to ="/about">A propos</NavLink></li>
+                        <NavLink to ="/about">A propos</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
