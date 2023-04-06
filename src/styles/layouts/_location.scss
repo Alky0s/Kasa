@@ -13,8 +13,7 @@
         width: 88%;
         background-color: #F6F6F6;
         border-radius: 15px;
-        margin-left: auto;
-        margin-right: auto;
+        @include marginAuto;
         margin-top: 30px;
         padding: 20px;
     }
@@ -23,8 +22,7 @@
         flex-direction: column;
         height: 100%;
         width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+        @include marginAuto;
         margin: 10px 0;
         position: relative;
         @include tablet {
@@ -43,13 +41,11 @@
         }
         &__image {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            @include marginAuto;
             border-radius: 15px;
             object-fit: cover;
             width: 90%;
             height: 180px;
-            // filter: brightness(70%);
             @include laptop {
                 height: 250px;
             }
@@ -57,7 +53,7 @@
         &__title {
             display: flex;
             color: white;
-            width: 80%;
+            width: 65%;
             font-size: 15px;
             font-weight: 500;
             position: absolute;
@@ -71,12 +67,12 @@
             }
             @include tablet {
                 margin-left: 60px;
-                width: 50%;
+                width: 55%;
                 font-size: 16px;
             } 
             @include laptop {
                 margin-left: 35px;
-                width: 60%;
+                width: 55%;
                 font-size: 15px;
             }
             @include desktop {
@@ -98,8 +94,7 @@
 
 .gradient {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include marginAuto;
     height: 100%;
     width: 90%;
     border-radius: 15px;

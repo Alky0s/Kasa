@@ -27,3 +27,32 @@
     @content;
     }
 }
+
+@mixin marginAuto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flexboxAlign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .stars {
+//     padding: 2px;
+//     @include laptop {
+//         width: 25px;
+//     }
+// }
+
+// .rating-stars {
+//     @include laptop {
+//         margin-right: 65px;
+//         margin-top: 5px;
+//     }
+//     @include desktop {
+//         margin-right: 90px;
+//         margin-top: 5px;
+//     }
+// }

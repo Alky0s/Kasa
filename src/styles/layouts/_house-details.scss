@@ -147,34 +147,28 @@
     }
 }
 
-
-    .house-informations__details {
-        @include laptop {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    .stars {
-        padding: 2px;
-    }
+.house-informations__details {
     @include laptop {
-        .rating-stars {
-            margin-right: 65px;
-            margin-top: 5px;
-        }
-        .stars {
-            width: 25px;
-            
-        }
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.stars {
+    padding: 2px;
+    @include laptop {
+        width: 25px;
+    }
+}
+
+.rating-stars {
+    @include laptop {
+        margin-right: 65px;
+        margin-top: 5px;
     }
     @include desktop {
-        .rating-stars {
-            margin-right: 90px;
-            margin-top: 5px;
-        }
-        .stars {
-            width: 25px;
-        }
+        margin-right: 90px;
+        margin-top: 5px;
     }
+}
 

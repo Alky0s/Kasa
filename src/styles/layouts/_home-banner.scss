@@ -13,8 +13,7 @@
         border-radius: 20px;
         margin: 0;
         margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        @include marginAuto;
         font-weight: 500;
         @include tablet {
             text-align: center;

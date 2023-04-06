@@ -16,8 +16,7 @@
     }
     &-logo {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        @include marginAuto;
         @include desktop {
             width: 12%;
         } 

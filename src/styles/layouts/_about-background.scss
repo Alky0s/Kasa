@@ -2,8 +2,7 @@
    display: block;
    height: 220px;
    width: 90%; 
-   margin-left: auto;
-   margin-right: auto;
+   @include marginAuto;
    margin-bottom: 20px;
    margin-top: 5px;
    border-radius: 10px;

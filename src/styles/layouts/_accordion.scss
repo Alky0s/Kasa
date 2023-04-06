@@ -1,8 +1,6 @@
 .accordion {
     &-item {
         margin: 10px;
-        // margin-left: auto;
-        // margin-right: auto;
         list-style: none;
         margin-bottom: 20px;
         & h3 {
@@ -23,9 +21,7 @@
         }
     }
     &-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+       @include flexboxAlign;
         padding-right: 8px;
         padding-left: 8px;
         color: white;
@@ -33,7 +29,7 @@
         font-weight: 400;
         border-radius: 5px;
         cursor: pointer;
-        background: #FF6060;
+        background: $primary-color;
         @include laptop {
             padding-left: 20px;
             padding-right: 20px;
@@ -42,7 +38,7 @@
     &-content {
         background: #F6F6F6;
         margin: 0;
-        color: #FF6060;
+        color: $primary-color;
         padding: 8px;
         padding-top: 15px;
         display: flex;
@@ -66,8 +62,7 @@
 
 .accordions-house {
     width: 88%;
-    margin-left: auto;
-    margin-right: auto;
+    @include marginAuto;
     @include laptop {
        display: flex;
     }
@@ -80,8 +75,7 @@
 
 .accordions-about {
     width: 88%;
-    margin-left: auto;
-    margin-right: auto;
+    @include marginAuto;
     @include tablet {
         width: 80%;
     }
