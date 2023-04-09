@@ -7,7 +7,7 @@ const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
   return (
     <div className="accordion-item">
-      {/* When I click, my useState becaome true */}
+      {/* When I click, my useState become true */}
       <div className="accordion-toggle" onClick={() => setIsActive(!isActive)}>
         <h3>{title}</h3>
         {/* If it's true, I change the arrow image */}
