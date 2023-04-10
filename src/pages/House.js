@@ -57,7 +57,7 @@ const House = () => {
                 <div className="house-informations__profile">
                     <div className="house-informations__rating">
                         {/* Rating system */}
-                        <RatingStars rating={item.rating}/>
+                        <RatingStars rating={Number(item.rating)}/>
                     </div>
                     <div className="house-informations__host">
                         <p className="house-informations__host-name">
@@ -70,8 +70,12 @@ const House = () => {
             </div>
             <div className="accordions-house">
                 {/* I insert Accordion component and modify it with the description and equipment list*/}
-                <div className="accordions-house__item"><Accordion title="Description" active={active} setActive={setActive} content={item.description}/></div>
-                <div className="accordions-house__item"><Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/></div>
+                <div className="accordions-house__item">
+                    <Accordion title="Description" active={active} setActive={setActive} content={item.description}/>
+                </div>
+                <div className="accordions-house__item">
+                    <Accordion title="Equipements" active={active} setActive={setActive} content={equipmentList}/>
+                </div>
             </div>
             <Footer />
         </div>

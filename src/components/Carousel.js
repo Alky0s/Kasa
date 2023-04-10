@@ -8,7 +8,7 @@ import ChevronR from "../assets/chevronR.png"
 export default function Carousel () {
     // I get the id of the location from the URL...
     const { id } = useParams();
-    // And I get all information I need about the location from our JSON file
+    // And I get all information I need about the location 
     const houseDetail = data.find((object) => object.id === id);
     const pictures = houseDetail.pictures;
 
